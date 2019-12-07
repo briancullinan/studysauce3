@@ -1,0 +1,263 @@
+
+#emails .templates a[href="#send-email"]
+{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url(../../studysauce/images/menu_new_half.png) no-repeat left -4102px transparent;
+    vertical-align: middle;
+}
+
+#emails .templates a[href="#send-email"]:hover
+{
+    background-position: left -4152px;
+}
+
+#editor1
+{
+    background-color:#fff;
+}
+
+#send-email .preview
+{
+    min-height: 400px;
+}
+
+#emails a[href="#add-field"]
+{
+    font-size: 50px;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 24px;
+}
+
+#emails a[href="#remove-field"]
+{
+    vertical-align: middle;
+}
+
+#emails a[href="#remove-field"],
+#emails a[href="#remove-line"]
+{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background: url(../../studysauce/images/menu_new_half.png) no-repeat left -1652px transparent;
+    vertical-align: middle;
+}
+
+#emails a[href="#remove-field"]:hover,
+#emails a[href="#remove-line"]:hover
+{
+    background-position: left -1702px;
+}
+
+#send-email .variables td
+{
+    vertical-align: bottom;
+}
+
+.topbar .buttons-container .button.icon-arrow-expand
+{
+    display:none;
+}
+
+.variables > tbody > tr > td
+{
+    padding:0 4px 0 0;
+}
+
+.variables > tbody > tr > td:last-child
+{
+    padding: 0;
+}
+
+.cke
+{
+    opacity: .75;
+    transition:opacity ease-in-out .15s;
+}
+
+#emails .ui-datepicker > a {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.cke:hover
+{
+    opacity: 1;
+}
+
+#add-field
+{
+    right: 50%;
+    top: 100px;
+    position: absolute;
+    left: auto;
+    bottom: auto;
+}
+
+#emails .history > thead > tr > th:first-child
+{
+    width:160px;
+}
+
+#emails .history > tbody > tr > td:first-child
+{
+    text-align: right;
+    width:80px;
+}
+
+#emails .history > tbody > tr > td:nth-child(2)
+{
+    text-align: left;
+    width:80px;
+}
+
+#emails .history > tbody > tr > td:nth-child(4),
+#emails .history > tbody > tr > td:nth-child(6)
+{
+    text-align: center;
+}
+
+#emails .history > thead > tr > th:nth-child(3),
+#emails .history > tbody > tr > td:nth-child(4)
+{
+    width: 150px;
+}
+
+#emails .history > thead > tr > th:nth-child(5),
+#emails .history > tbody > tr > td:nth-child(6)
+{
+    width: 200px;
+}
+
+#emails .history > tbody > tr > td {
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    table-layout: fixed;
+}
+
+#emails .history > tbody > tr > td:nth-child(3) span:nth-child(1),
+#emails .history > tbody > tr > td:nth-child(3) span:nth-child(2),
+#emails .history > tbody > tr > td:nth-child(5) span:nth-child(1),
+#emails .history > tbody > tr > td:nth-child(5) span:nth-child(2)
+{
+    width:50%;
+    display:inline-block;
+    margin: 0 -2px;
+    padding: 0 2px;
+}
+
+#emails .history > tbody > tr > td:nth-child(3) span:nth-child(3),
+#emails .history > tbody > tr > td:nth-child(5) span:nth-child(3)
+{
+    display:block;
+}
+
+#emails .search {
+    display:inline-block;
+    width:100%;
+    margin-right:-300px;
+    padding-right:300px;
+}
+
+#emails .history > thead > tr > th:last-child,
+#emails .history > tbody > tr > td:last-child,
+#emails .templates > thead > tr > th:last-child,
+#emails .templates > tbody > tr > td:last-child
+{
+    text-align: right;
+    width: 100px;
+}
+
+#emails .variables > thead > tr > th:last-child,
+#emails .variables > tbody > tr > td:last-child
+{
+    text-align: right;
+    width: 50px;
+    overflow: hidden;
+}
+
+.email-variables .title {
+    display: block;
+}
+
+.email-variables .name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.email-variables .description {
+    display: block;
+    opacity: 0.5;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.email-variables .by {
+    opacity: 0.8;
+}
+
+.variables
+{
+    display:none;
+}
+
+#emails .variables > thead > tr > th > label
+{
+    padding-right:30px;
+    margin-right:-30px;
+    display:inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#send-email .highlighted-link
+{
+    margin: 20px 0;
+}
+
+#emails .variables
+{
+    display:table;
+}
+
+#emails .templates {
+    margin-top: 35px;
+}
+
+#send-email .nav-tabs
+{
+    float:none;
+    margin:0;
+    position:static;
+}
+
+[contenteditable="true"]
+{
+    outline: none;
+}
+
+#send-email .pane-top .input
+{
+    width: 50%;
+    display:inline-block;
+    margin: 0 -2px;
+    padding: 0 2px;
+}
+
+#send-email .pane-top .input:first-of-type {
+    margin-top:35px;
+}
+
+#send-email .pane-top .input.save
+{
+    margin-right: -130px;
+    padding-right: 130px;
+}

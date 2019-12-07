@@ -1,0 +1,907 @@
+
+[id^="packs-"] .card-row.edit .highlighted-link > *
+{
+    display:none;
+}
+
+[id^="packs-"] .group-list {
+    margin: 0 0 50px 0;
+}
+
+[id^="packs-"] .highlighted-link.pack a[href="#add-pack"],
+[id^="packs-"] .highlighted-link.pack .cancel-edit,
+[id^="packs-"] .highlighted-link.pack a[href="#save-ss_group"],
+[id^="packs-"] .card-row > label.checkbox:nth-last-child(1),
+[id^="packs-"] .card-row > label.checkbox:nth-last-child(1),
+[id^="packs-"] .pack-row > label.checkbox:nth-last-child(1),
+[id^="packs-"] .pack-row.edit ~ .highlighted-link.pack a[href^="#add-"],
+[id^="packs-"] .pack-row.edit ~ .highlighted-link.pack a[href^="#edit-"],
+[id^="packs-"] .pack-row.read-only ~ .highlighted-link.pack a[href^="#save-"]
+{
+    display: none;
+}
+
+[id^="packs-"] .pack-row.edit ~ .highlighted-link.pack .cancel-edit,
+[id^="packs-"] .pack-row.edit ~ .highlighted-link.pack a[href="#save-ss_group"],
+[id^="packs-"] .card-row.edit.selected .highlighted-link > *:not(.more),
+[id^="packs-"] .card-row.edit:hover .highlighted-link > *:not(.more)
+{
+    display: inline-block;
+}
+
+[id^="packs-"] .pack-row.edit ~ .highlighted-link.pack .cancel-edit,
+[id^="packs-"] .pack-row.edit ~ .highlighted-link.pack a[href^="#save-"]
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+#packs .pack-row .status .unpublished .selectize-input,
+[id^="packs-"] .pack-row .status .unpublished .selectize-input,
+#packs .pack-row .status .unpublished select,
+[id^="packs-"] .pack-row .status .unpublished select {
+    background-color: #FF9900;
+}
+#packs .pack-row .status .public .selectize-input,
+[id^="packs-"] .pack-row .status .public .selectize-input,
+#packs .pack-row .status .public select,
+[id^="packs-"] .pack-row .status .public select {
+    background-color: #11CC33;
+}
+#packs .pack-row .status .group .selectize-input,
+[id^="packs-"] .pack-row .status .group .selectize-input,
+#packs .pack-row .status .group select,
+[id^="packs-"] .pack-row .status .group select {
+    background-color: #1199CC;
+}
+#packs .pack-row .status .group.pending .selectize-input,
+[id^="packs-"] .pack-row .status .group.pending .selectize-input,
+#packs .pack-row .status .group.pending select,
+[id^="packs-"] .pack-row .status .group.pending select {
+    background-color: #EECC11;
+}
+#packs .pack-row .status .unlisted .selectize-input,
+[id^="packs-"] .pack-row .status .unlisted .selectize-input,
+#packs .pack-row .status .unlisted select,
+[id^="packs-"] .pack-row .status .unlisted select {
+    background-color: #AAAAAA;
+}
+#packs .pack-row .status .deleted .selectize-input,
+[id^="packs-"] .pack-row .status .deleted .selectize-input,
+#packs .pack-row .status .deleted select,
+[id^="packs-"] .pack-row .status .deleted select {
+    background-color: #FF4433;
+}
+
+.pack-edit .pack-row > :nth-of-type(2),
+.pack-edit .pack-row > :nth-of-type(4) {
+    width: 45%;
+    margin-left:10%;
+    padding-left:150px;
+    margin-right:0;
+    padding-right:5%;
+}
+
+[id^="packs-"] .pack-edit {
+    margin:-30px -100px 50px;
+    padding: 30px 100px 20px;
+    background-color: #BBB;
+}
+
+[id^="packs-"] .pack-row > .users {
+    width: 25%;
+}
+
+[id^="packs-"] .pack-row > .status
+{
+    width: 45%;
+    padding-left:150px;
+    margin-left:-4px;
+}
+
+[id^="packs-"] .highlighted-link.card {
+    display:none;
+}
+
+[id^="packs-"] .card-row.edit ~ .highlighted-link.card {
+    display:block;
+    margin:20px 0;
+}
+
+[id^="packs-"] .card-row > * {
+    width: 20%;
+}
+
+[id^="packs-"] header.card label:nth-child(1),
+[id^="packs-"] .card-row .id {
+    width: 25%;
+}
+
+[id^="packs-"] header.card label:nth-child(1) {
+    padding-left:40px;
+}
+
+[id^="packs-"] .card-row .id a.active
+{
+    background-color:#09B;
+}
+
+[id^="packs-"] .card-row .id a[href^="#upload-image"].active:before
+{
+    background-position: left -52px;
+}
+
+[id^="packs-"] .card-row .id a[href^="#upload-audio"].active:before
+{
+    background-position: left -102px;
+}
+
+[id^="packs-"] .card-row .id a[href^="#upload-video"].active:before
+{
+    background-position: left -2px;
+}
+
+[id^="packs-"] .card-row.read-only .id a {
+    z-index:0;
+    pointer-events: none;
+}
+
+[id^="packs-"] .card-row > *:nth-last-child(2)
+{
+    width:5%;
+}
+
+[id^="packs-"] header.card label:nth-child(2),
+[id^="packs-"] .card-row > *:nth-child(2) {
+    width: 35%;
+}
+
+[id^="packs-"] .card-row .correct.type-tf {
+    text-align: right;
+}
+
+[id^="packs-"] .card-row .correct.type-tf + .correct.type-tf {
+    text-align: left;
+}
+
+[id^="packs-"] .group-list {
+    position:relative;
+}
+
+#packs [class*="List"] label {
+    color: #BBB;
+    font-weight: normal;
+}
+
+[id^="packs-"] .card-row[class*="type"] .correct .correct:not([class*="type-"]),
+[id^="packs-"] .correct .correct[class*="type-"],
+[id^="packs-"] .card-row[class*="type"] .answers .answers:not([class*="type-"]),
+[id^="packs-"] .answers .answers[class*="type-"],
+[id^="packs-"] .card-row > .answers,
+[id^="packs-"] .card-row[class*="type"].type-tf > .answers
+{
+    display:none;
+}
+
+[id^="packs-"] header.card label:nth-child(3),
+[id^="packs-"] .card-row > .correct,
+[id^="packs-"] .card-row[class*="type"].type-tf .correct
+{
+    width:35%;
+}
+
+[id^="packs-"] .card-row .input.type {
+    margin-right:-100px;
+    display:inline-block;
+    padding-left:40px;
+    padding-right:100px;
+    width:100%;
+    position:relative;
+    vertical-align: middle;
+}
+
+[id^="packs-"] .card-row .input.type.select:before {
+    right:100px;
+    left:40px;
+}
+
+[id^="packs-"] .selectize-control.multi .selectize-input {
+    height:auto;
+    max-height:6em;
+    white-space: normal;
+}
+
+[id^="packs-"] .card-row .input.type > span {
+    width:40px;
+    display:block;
+    margin-right:-4px;
+    position:absolute;
+    left:0;
+    top:50%;
+    margin-top:-9px;
+    text-align: center;
+}
+
+[id^="packs-"] .card-row.type-tf .correct.type-tf
+{
+    display:inline-block;
+    width:50%;
+    margin:0 -2px;
+    padding: 0 2px;
+}
+
+[id^="packs-"] .card-row[class*="type"] > .answers
+{
+    display:inline-block;
+}
+
+[id^="packs-"] .card-row.type-mc .answers.type-mc,
+[id^="packs-"] .card-row.type-sa .answers.type-sa,
+[id^="packs-"] .card-row.type-mc .correct.type-mc,
+[id^="packs-"] .card-row.type-sa .correct.type-sa
+{
+    display:block;
+}
+
+[id^="cards"] {
+    left: 0;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    padding-top:70px;
+}
+
+[id^="cards"] .user_pack-row:hover,
+[id^="cards"] .user_pack-row.selected,
+[id^="cards"] .card-row.selected,
+[id^="cards"] .card-row:hover {
+    background:transparent !important;
+    border-color:transparent !important;
+    cursor: inherit;
+}
+
+[id^="cards"] .pane-content {
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    right: 100px;
+    bottom: 50px;
+    text-align: center;
+}
+
+[id^="cards-pack"] .pane-content
+{
+    background: #eee;
+    border: 1px solid #BBB;
+}
+
+[id^="cards"] .preview-card {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: #eee;
+    vertical-align: middle;
+    border: 1px solid #BBB;
+    padding: 30px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+[id^="packs-"] .card-row + .expandable h3 {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+[id^="packs-"] .card-row + .expandable {
+    white-space: nowrap;
+}
+
+[id^="packs-"] .card-row + .expandable .preview {
+    height:400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+[id^="packs-"] .card-row + .expandable .preview-card {
+    width: 300px;
+    height: 100%;
+    background: #eee;
+    vertical-align: middle;
+    position:relative;
+    border: 1px solid #BBB;
+    padding: 10px;
+    white-space: normal;
+    margin:0 5px;
+    display:none;
+    word-wrap: break-word;
+}
+
+[id^="cards"] .preview-progress,
+[id^="packs-"] .preview-progress,
+[id^="cards"] .preview-play .pause,
+[id^="packs-"] .preview-play .pause,
+[id^="cards"] .preview-play .play,
+[id^="packs-"] .preview-play .play {
+    position: absolute;
+    top: 0;
+    left:50%;
+    margin-left: -32px;
+    background: url(../images/menu_icons_64.png) no-repeat 0 -2432px transparent;
+    height: 64px;
+    width: 64px;
+    border: 0;
+    transition: none;
+    cursor: pointer;
+}
+
+[id^="cards"] .preview-progress,
+[id^="packs-"] .preview-progress {
+    height: 128px;
+    width: 128px;
+    background:none transparent;
+    margin-left:-64px;
+}
+
+[id^="cards"] .preview-play .pause,
+[id^="packs-"] .preview-play .pause {
+    background: url(../images/menu_icons_64.png) no-repeat 0 -2368px transparent;
+    display: none;
+}
+
+[id^="cards"] .type-sa .input {
+    display:inline-block;
+    margin-right:-100px;
+    padding-right:100px;
+    width:100%;
+}
+
+[id^="packs-"] .card-row:not([class*="type-"]) + .expandable .preview-card:not([class*="type-"]),
+[id^="packs-"] .card-row.type-mc + .expandable .preview-card.type-mc,
+[id^="packs-"] .card-row.type-tf + .expandable .preview-card.type-tf,
+[id^="packs-"] .card-row.type-sa + .expandable .preview-card.type-sa
+{
+    display: inline-block;
+}
+
+[id^="cards"] .preview-title,
+[id^="packs-"] .card-row + .expandable .preview-title {
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    background: #555;
+    color: #EEE;
+    font-size: 105%;
+    padding:5px;
+    text-align: right;
+}
+
+[id^="cards"] .preview-prompt,
+[id^="packs-"] .card-row + .expandable .preview-prompt {
+    background: #FFF;
+    height: 40%;
+    padding: 10px;
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    z-index: 10;
+}
+
+[id^="cards"] .type-mc .preview-response,
+[id^="packs-"] .card-row + .expandable .type-mc .preview-response {
+    height: 24%;
+    margin: 4px -10px;
+    background: #09B;
+    color: #fff;
+    padding:1px;
+    position:relative;
+    display:block;
+}
+
+[id^="cards"] .type-mc .preview-response
+{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+[id^="cards-answer"] .user_pack-row,
+[id^="cards-card"] .user_pack-row {
+    display:none;
+}
+
+[id^="cards"] .preview-inner,
+[id^="packs-"] .card-row + .expandable .preview-inner {
+    height:100%;
+}
+
+[id^="cards"] .preview-card:not(.preview-answer) .preview-inner,
+[id^="packs-"] .preview-card:not(.preview-answer) .preview-inner
+{
+    padding-bottom: 3.0em;
+    margin-bottom: -2.6em;
+}
+
+[id^="cards"] .preview-card.type-tf:not(.preview-answer) .preview-inner,
+[id^="packs-"] .preview-card.type-tf:not(.preview-answer) .preview-inner,
+[id^="cards"] .preview-answer:not([class*="type-"]) .preview-inner,
+[id^="packs-"] .card-row + .expandable .preview-answer:not([class*="type-"]) .preview-inner
+{
+    padding-bottom: 6%;
+    margin-bottom: 10px;
+    padding-top:30px;
+}
+
+#packs-pack0 .group-list .results {
+    opacity: 0.2;
+    position: relative;
+    z-index: -1;
+}
+
+#packs-pack0 .empty-members {
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#packs-pack0 .group-list:before {
+    content: "Set a title above to assign membership.";
+    display:block;
+    width:400px;
+    position:absolute;
+    top:25%;
+    left:50%;
+    color:#BBB;
+    font-size:32px;
+    margin-left:-200px;
+    z-index: 10;
+    font-weight: bold;
+    text-align:center;
+    line-height:140%;
+}
+
+[id^="cards"] .preview-footer,
+[id^="packs-"] .card-row + .expandable .preview-footer
+{
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    left: 30px;
+}
+
+[id^="cards"] .preview-card.type-mc:not(.preview-answer) .preview-footer,
+[id^="packs-"] .card-row + .expandable .preview-card.type-mc:not(.preview-answer) .preview-footer
+{
+    height:40%;
+    padding:12px 0 12px;
+}
+
+[id^="cards"] .preview-card.type-mc:not(.preview-answer) .preview-footer
+{
+    padding-top:24px;
+    padding-bottom:54px; /* for card count */
+}
+
+[id^="cards"] .preview-count {
+    position:relative;
+    top:5px;
+    color:#BBB;
+}
+
+[id^="cards"] .type-mc .preview-inner,
+[id^="packs-"] .card-row + .expandable .type-mc .preview-inner {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+[id^="packs"] .ss_user-row {
+    display:none;
+}
+
+[id^="cards"] .preview-card.type-sa:not(.preview-answer) .preview-inner,
+[id^="packs-"] .card-row + .expandable .preview-card.type-sa:not(.preview-answer) .preview-inner {
+    margin-bottom: -2.4em;
+    padding-bottom: 2.4em;
+}
+
+[id^="cards"] .preview-answer .preview-inner,
+[id^="packs-"] .card-row + .expandable .preview-answer .preview-inner {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+}
+
+[id^="cards"] .preview-answer .preview-correct,
+[id^="packs-"] .card-row + .expandable .preview-answer .preview-correct {
+    color: #BBB;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 10px;
+}
+
+[id^="cards-answer"] h2,
+[id^="cards-card"] h2 {
+    position: fixed;
+    top: 0;
+    right: 100px;
+    z-index: 2002;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 0;
+    max-width: 100%;
+    padding-left:60px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+[id^="cards"] .preview-tap,
+[id^="packs-"] .card-row + .expandable .preview-tap
+{
+    color: #bbb;
+}
+
+[id^="cards"] .preview-true,
+[id^="cards"] .preview-false,
+[id^="packs-"] .card-row + .expandable .preview-true,
+[id^="packs-"] .card-row + .expandable .preview-false,
+[id^="cards"] .preview-right,
+[id^="cards"] .preview-wrong,
+[id^="packs-"] .card-row + .expandable .preview-right,
+[id^="packs-"] .card-row + .expandable .preview-wrong {
+    width: 10%;
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #FF0D00;
+    padding: 3% 10px;
+    margin: 0 -4px;
+    line-height: 0;
+}
+
+[id^="cards"] .preview-right,
+[id^="cards"] .preview-wrong,
+[id^="packs-"] .card-row + .expandable .preview-right,
+[id^="packs-"] .card-row + .expandable .preview-wrong {
+    font-weight: bold;
+}
+
+[id^="cards"] .preview-true,
+[id^="cards"] .preview-right,
+[id^="packs-"] .card-row + .expandable .preview-true,
+[id^="packs-"] .card-row + .expandable .preview-right
+{
+    background:#078600;
+}
+
+[id^="cards"] .preview-guess,
+[id^="packs-"] .card-row + .expandable .preview-guess {
+    display: inline-block;
+    width: 100%;
+    margin: 0 -10%;
+    padding: 0 10%;
+    vertical-align: middle;
+    color: #BBB;
+}
+
+[id^="cards"] .preview-prompt img,
+[id^="cards"] .preview-inner img,
+[id^="packs-"] .card-row + .expandable .preview-prompt img,
+[id^="packs-"] .card-row + .expandable .preview-inner img {
+    height:auto;
+    width:auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+[id^="cards"] .preview-content,
+[id^="packs-"] .card-row + .expandable .preview-content {
+    height: 100%;
+    overflow: auto;
+    overflow-x:hidden;
+    font-size: 20px;
+}
+
+[id^="packs-"] .card-row + .expandable .preview-true,
+[id^="packs-"] .card-row + .expandable .preview-false,
+[id^="packs-"] .card-row + .expandable .preview-right,
+[id^="packs-"] .card-row + .expandable .preview-wrong {
+    width:75px;
+    padding:22px 10px;
+    font-size: 20px;
+}
+
+[id^="packs-"] .preview-card.type-tf:not(.preview-answer) .preview-inner,
+[id^="packs-"] .card-row + .expandable .preview-answer:not([class*="type-"]) .preview-inner
+{
+    padding-bottom:60px;
+}
+
+[id^="packs-"] .card-row + .expandable .preview-guess
+{
+    margin: 0 -80px;
+    padding: 0 80px;
+}
+
+.study-mode .main-menu a,
+.funnel .main-menu a,
+.study-mode #welcome-message,
+.funnel #welcome-message,
+.study-mode .footer,
+.funnel .footer {
+    display:none;
+}
+
+body.study-mode,
+body.funnel {
+    padding-bottom: 0;
+}
+
+[id^="cards"] .preview-answer .preview-inner .preview-content,
+[id^="cards"] .preview-card:not(.preview-answer) .preview-content,
+[id^="packs-"] .card-row + .expandable .preview-answer .preview-inner .preview-content,
+[id^="packs-"] .card-row + .expandable .preview-card:not(.preview-answer) .preview-content {
+    font-size: 30px;
+    line-height: 120%;
+    position: relative;
+}
+
+[id^="cards"] .results .cardResult {
+    width:100%;
+    text-align: center;
+}
+
+[id^="cards"] .results .cardResult h1,
+[id^="cards"] .results .cardResult h2,
+[id^="cards"] .results .cardResult h3
+{
+    text-align: center;
+    white-space: normal;
+}
+
+[id^="cards"] .results .cardResult h1 {
+    color:#F90;
+    font-size:80px;
+}
+
+[id^="cards"] .results .cardResult h2 {
+    font-size:40px;
+}
+
+[id^="cards"] .preview-card.type-mc:not(.preview-answer) .preview-inner,
+[id^="packs-"] .card-row + .expandable .preview-card.type-mc:not(.preview-answer) .preview-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40%;
+    height: auto;
+}
+
+[id^="cards"] .preview-card.type-sa:not(.preview-answer) input,
+[id^="packs-"] .card-row + .expandable .type-sa label input {
+    font-size: 140%;
+    height:auto;
+    border:1px solid #555;
+    border-radius:0;
+}
+
+[id^="packs-"] .card-row .correct {
+    position:relative;
+}
+
+[id^="packs-"] .card-row .correct.editing .radios {
+    height:auto;
+    pointer-events: inherit;
+}
+
+[id^="packs-"] .card-row .radios input:checked ~ i,
+[id^="packs-"] .card-row .radios input:checked ~ i,
+[id^="packs-"] .card-row .correct.editing .radios i {
+    z-index: 10;
+    position:relative;
+    display:inline-block;
+}
+
+[id^="packs-"] .card-row .correct.editing .radios span {
+    z-index: -1;
+    position:relative;
+}
+
+[id^="packs-"] .card-row .radios {
+    white-space: normal;
+    vertical-align: middle;
+    line-height: 135%;
+    position:absolute;
+    height: 1.7em;
+    overflow:hidden;
+    padding: 3px;
+    pointer-events: none;
+    width: 100%;
+}
+
+[id^="packs-"] .card-row .radios label {
+    display:block;
+    font-size:inherit;
+    line-height: inherit;
+    padding-left:27px;
+    white-space: pre-wrap;
+    color:transparent;
+}
+
+[id^="packs-"] .card-row .radios label i {
+    margin-left:-21px;
+}
+
+[id^="packs-"] .card-row .correct.type-mc textarea {
+    padding-left: 30px;
+    vertical-align: middle;
+    position:relative;
+}
+
+[id^="packs-"] .results .pack-row [class*="actions"]
+{
+    position: absolute;
+    width: 40px;
+    top: 25%;
+    padding-right: 2px;
+    margin-right: -2px;
+    left: 50%;
+    margin-top: -9px;
+    margin-left:2px;
+}
+
+[id^="packs-"] .results .card-row.read-only [class*="actions"],
+[id^="packs-"] .results .pack-row.read-only [class*="actions"]
+{
+    display:none;
+}
+
+[id^="packs-"] .results .card-row [class*="actions"]
+{
+    padding-right: 2px;
+    margin-right: -2px;
+}
+
+.flash-right, .flash-wrong {
+    position:fixed;
+    top:40px;
+    right:0;
+    left:0;
+    bottom:0;
+    background-color:#078600;
+    z-index:100;
+    font-weight: bold;
+}
+
+.flash-right span, .flash-wrong span {
+    color:#fff;
+    font-size:80px;
+    position:absolute;
+    top:50%;
+    text-align:center;
+    left:50%;
+    margin-left:-50px;
+    margin-top:-50px;
+    width:100px;
+    height:100px;
+    z-index:100;
+}
+
+.flash-wrong {
+    background-color:#FF0D00;
+}
+
+[id^="packs-"] .pack-row.read-only a[href="#pack-publish"],
+#packs .pack-row > label.checkbox:nth-last-child(1),
+#packs .highlighted-link.card,
+#packs a[href="#pack-publish"] {
+    display:none;
+}
+
+[id^="packs-"] .pack-row.edit .highlighted-link > .remove-icon
+{
+    display:inline-block !important;
+}
+
+[id^="packs-"] .pack-row.edit .highlighted-link > a[href="#cancel-edit"],
+[id^="packs-"] .pack-row.edit .highlighted-link > [value^="#save-"]
+{
+    display:none !important;
+}
+
+@media all and (max-width: 1000px), all and (max-height:1000px) {
+
+    [id^="cards"] .preview-true,
+    [id^="cards"] .preview-false,
+    [id^="cards"] .preview-right,
+    [id^="cards"] .preview-wrong
+    {
+        width:100px;
+        padding:30px 10px;
+    }
+
+    [id^="cards"] .preview-card.type-tf:not(.preview-answer) .preview-inner,
+    [id^="cards"] .preview-answer:not([class*="type-"]) .preview-inner
+    {
+        padding-bottom:80px;
+    }
+
+    [id^="cards"] .preview-guess
+    {
+        margin: 0 -104px;
+        padding: 0 104px;
+    }
+
+    [id^="cards"] .pane-content {
+        top: 50px;
+        bottom: 10px;
+    }
+}
+
+@media all and (max-width: 1300px) {
+
+    [id^="cards"] h2 {
+        right:10px;
+    }
+
+    [id^="cards"] .pane-content {
+        left: 5px;
+        right: 5px;
+    }
+}
+
+@media all and (max-width: 700px), all and (max-height:700px) {
+
+    [id^="cards"] .type-mc .preview-response {
+        margin-top:4px;
+        margin-bottom:4px;
+    }
+
+    [id^="cards"] .preview-card.type-mc:not(.preview-answer) .preview-footer {
+        padding-top:12px;
+        padding-bottom:42px;
+    }
+
+    [id^="cards"] .preview-true,
+    [id^="cards"] .preview-false,
+    [id^="packs-"] .card-row + .expandable .preview-true,
+    [id^="packs-"] .card-row + .expandable .preview-false,
+    [id^="cards"] .preview-right,
+    [id^="cards"] .preview-wrong,
+    [id^="packs-"] .card-row + .expandable .preview-right,
+    [id^="packs-"] .card-row + .expandable .preview-wrong
+    {
+        width:75px;
+        padding:22px 10px;
+        font-size: 20px;
+    }
+
+    [id^="cards"] .preview-card.type-tf:not(.preview-answer) .preview-inner,
+    [id^="packs-"] .preview-card.type-tf:not(.preview-answer) .preview-inner,
+    [id^="cards"] .preview-answer:not([class*="type-"]) .preview-inner,
+    [id^="packs-"] .card-row + .expandable .preview-answer:not([class*="type-"]) .preview-inner
+    {
+        padding-bottom:60px;
+    }
+
+    [id^="cards"] .preview-guess,
+    [id^="packs-"] .card-row + .expandable .preview-guess
+    {
+        margin: 0 -80px;
+        padding: 0 80px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    [id^="cards"] h2 {
+        font-size:20px;
+        top:5px;
+    }
+}

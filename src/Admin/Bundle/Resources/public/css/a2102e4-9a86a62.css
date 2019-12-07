@@ -1,0 +1,175 @@
+
+#command .count-bubble
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #555;
+    color: #fff;
+    margin: 20px;
+    position: relative;
+    padding: 30px 0 10px 0;
+    display: inline-block;
+}
+
+#command .count-bubble i
+{
+    font-size: 48px;
+    line-height: 110%;
+    width:100%;
+    display:inline-block;
+    text-align: center;
+}
+
+#command .count-bubble small
+{
+    position:absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    left:0;
+    padding-top:10px;
+
+}
+
+#command a[href*="_switch_user"]
+{
+    height: 24px;
+    width: 24px;
+    background: url(../../studysauce/images/menu_new_half.png) no-repeat left -4002px transparent;
+}
+
+#command a[href*="_switch_user"]:hover
+{
+    background-position: left -4052px;
+}
+
+#command a[href="#confirm-password-reset"]
+{
+    height: 24px;
+    width: 24px;
+    background: url(../../studysauce/images/menu_new_half.png) no-repeat left -3902px transparent;
+}
+
+#command a[href="#confirm-password-reset"]:hover
+{
+    background-position: left -3952px;
+}
+
+#command a[href="#confirm-cancel-user"]
+{
+    height: 24px;
+    width: 24px;
+    background: url(../../studysauce/images/menu_new_half.png) no-repeat left -1102px transparent;
+}
+
+#command a[href="#confirm-cancel-user"]:hover
+{
+    background-position: left -1152px;
+}
+
+#command .read-only a[href*="/emails"]
+{
+    height: 24px;
+    width: 24px;
+    background: url(../../studysauce/images/menu_new_half.png) no-repeat left -4102px transparent;
+}
+
+#command .read-only a[href*="mailto:"]:hover
+{
+    background-position: left -4152px;
+}
+
+#command .ui-datepicker > a
+{
+    display:block;
+    text-align: left;
+    padding-left:10px;
+}
+
+#command .ui-datepicker > a:hover
+{
+    background-color: #09B;
+    color: #fff;
+    font-weight: bold;
+}
+
+.results .ss_user-row .user-name .input:nth-child(1),
+.results .ss_user-row .user-name .input:nth-child(2)
+{
+    margin: 0 -2px;
+    padding: 0 2px;
+    width: 50%;
+    display:inline-block;
+}
+
+#command .ss_user-row {
+    display:flex;
+}
+
+#command .ss_user-row .id {
+    flex-basis:10%;
+}
+
+#command .ss_user-row .title {
+    flex-basis: 30%;
+}
+
+#command .ss_user-row .actions {
+    flex-basis:200px;
+}
+
+#command .ss_user-row > * {
+    padding:15px;
+    flex-shrink:0;
+}
+
+#command .ss_user-row .actions div {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#command .ss_user-row > .id,
+#command .ss_user-row > .groups,
+#command .ss_user-row > .actions {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#command .ss_user-row > *:nth-child(2) {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#command .ss_user-row > *:nth-child(2) label:nth-of-type(1),
+#command .ss_user-row > *:nth-child(2) label:nth-of-type(2) {
+    width:50%;
+}
+
+#command .ss_user-row > *:nth-child(2) label:nth-of-type(3) {
+    width:100%;
+}
+
+#command .ss_user-row > *:nth-child(3) {
+    flex-basis:auto;
+    flex-grow:1;
+}
+
+@media all and (max-width:1000px)
+{
+    
+}
+
+@media all and (max-width:700px)
+{
+
+}
+
+
+@media all and (max-width:500px)
+{
+
+}

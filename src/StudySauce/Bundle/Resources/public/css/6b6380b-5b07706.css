@@ -1,0 +1,16 @@
+
+#about {
+    min-height: 100%;
+    /* position: absolute; */
+    padding-bottom: 70px;
+    margin-bottom: -70px;
+}
+
+#about .pane-content {
+    position: relative;
+    min-height: 100%;
+}
+
+#about .inner-wrapper {
+    min-height:100%;
+}

@@ -1,0 +1,6 @@
+
+#import .results header > *,
+#import .import-row > *
+{
+    width:20%;
+}

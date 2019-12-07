@@ -1,0 +1,252 @@
+
+[id^="groups"] .pane-content
+{
+    min-height: 600px;
+}
+
+.group-edit .ss_group-row.edit ~ .highlighted-link.ss_group .cancel-edit,
+.group-edit .ss_group-row.edit ~ .highlighted-link.ss_group a[href="#save-ss_group"],
+.group-edit .highlighted-link a[href="#edit-ss_group"] {
+    display:inline-block;
+}
+
+
+.group-edit .highlighted-link.ss_group .cancel-edit,
+.group-edit .highlighted-link.ss_group a[href="#save-ss_group"],
+.group-edit .highlighted-link.ss_group a[href="#add-ss_group"],
+.group-edit .ss_group-row.edit ~ .highlighted-link a[href="#edit-ss_group"] {
+    display:none;
+}
+
+.group-edit .ss_group-row.edit ~ .highlighted-link.ss_group a[href^="#add-"],
+.group-edit .ss_group-row.read-only ~ .highlighted-link.ss_group a[href^="#save-"]
+{
+    visibility: hidden;
+}
+
+.group-edit .ss_group-row.edit ~ .highlighted-link.ss_group .cancel-edit,
+.group-edit .ss_group-row.edit ~ .highlighted-link.ss_group a[href^="#save-"]
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.group-edit .ss_group-row > .parent
+{
+    width: 45%;
+    padding-left:150px;
+    margin-right:-4px;
+    padding-right:4px;
+}
+
+[id^="groups-"] .group-edit {
+    margin:-30px -10px 40px;
+    padding: 30px 10px 20px;
+    background-color: #BBB;
+}
+
+.group-edit .results .ss_group-row.read-only:hover
+{
+    background-color:transparent;
+    border-color:transparent;
+}
+
+.group-edit .results .ss_group-row [class*="actions"]
+{
+    position:absolute;
+    width:40px;
+    top:25%;
+    padding-right:2px;
+    margin-right: -2px;
+    left:50%;
+    margin-top:-9px;
+}
+
+[id^="groups-"] .group-list .ss_group-row .actions .remove-icon {
+    display:none;
+}
+
+.group-edit .results .ss_group-row.read-only .subgroup,
+.group-edit .results .ss_group-row.read-only [class*="actions"] {
+    display:none;
+}
+
+.group-edit .ss_group-row > .name
+{
+    width:40%;
+    padding-left:150px;
+    margin-right:5%;
+    margin-left:10%;
+}
+
+.list-packs .ss_group-row {
+    display:none !important;
+}
+
+.group-edit .ss_group-row .invite,
+.group-edit .ss_group-row .invites
+{
+    width: 40%;
+    padding-left:150px;
+    margin-left:10%;
+    margin-right:5%;
+    padding-right:2px;
+}
+
+.group-edit .pane-content {
+    min-height:600px;
+}
+
+.group-list .ss_group-row .parent {
+    display:none;
+}
+
+.membership {
+    position:relative;
+}
+
+#groups-group0 .membership {
+    position: relative;
+}
+
+#groups-group0 .membership > .group-list,
+#groups-group0 .membership > .list-packs {
+    opacity: 0.2;
+    position: relative;
+    z-index: -1;
+}
+
+#groups-group0 .membership > .empty-members {
+    opacity: 0.2;
+    z-index: -1;
+}
+
+#groups-group0 .membership:before {
+    content: "Save new group above to assign membership.";
+    display:block;
+    width:400px;
+    position:absolute;
+    top:25%;
+    left:50%;
+    color:#BBB;
+    font-size:32px;
+    margin-left:-200px;
+    z-index: 10;
+    font-weight: bold;
+    text-align:center;
+    line-height:140%;
+}
+
+.group-edit .ss_group-row > label.checkbox:nth-last-child(1),
+.list-packs .pack-row > label.checkbox:nth-last-child(1) {
+    display:none;
+}
+
+.group-edit .ss_group-row.read-only .pack-icon
+{
+    pointer-events: none;
+}
+
+.group-edit .ss_group-row.edit .highlighted-link > .remove-icon
+{
+    display:inline-block !important;
+}
+
+.group-edit .ss_group-row.edit .highlighted-link > a[href="#cancel-edit"],
+.group-edit .ss_group-row.edit .highlighted-link > [value^="#save-"]
+{
+    display:none !important;
+}
+
+.list-packs .pack-row.edit .highlighted-link > .remove-icon
+{
+    display:inline-block !important;
+}
+
+.list-packs .pack-row .highlighted-link > a[href="#cancel-edit"],
+.list-packs .pack-row .highlighted-link > [value^="#save-"]
+{
+    display:none !important;
+}
+
+@media (min-width: 1300px) {
+    [id^="groups-"] .group-edit {
+        padding-left:100px;
+        padding-right:100px;
+        margin-left:-100px;
+        margin-right:-100px;
+    }
+}
+
+@media all and (max-width:700px) {
+
+    .group-edit .ss_group-row .invite, .group-edit .ss_group-row .invites,
+    .group-edit .ss_group-row > .parent,
+    .group-edit .ss_group-row > .name {
+        width: 80%;
+        padding-left: 150px;
+        margin-right: 0;
+        display:block;
+        margin-left:auto;
+    }
+
+    [class*="-edit"] header label:nth-child(3),
+    [class*="-edit"] header label:nth-child(2),
+    [class*="-edit"] header label:nth-child(1)
+    {
+        width:80%;
+        display:block;
+        padding-left:20%;
+    }
+
+    [class*="-edit"] [class*="-row"] > [class^="id"] {
+        width:20%;
+    }
+
+    .empty-members {
+        display:none;
+    }
+
+    .last-right-expand [class*="-row"] .title {
+        width:85%;
+        margin-right:-44px;
+        padding-right:44px;
+    }
+
+    .last-right-expand [class*="-row"] > [class^="id"] {
+        width:15%;
+    }
+
+    .results header > [class*="actions"], [class*="-row"] > [class*="actions"]:nth-last-child(2) {
+        width:40px;
+    }
+
+    .last-right-expand > footer > label:nth-of-type(1), .last-right-expand > header > label:nth-of-type(1) {
+        width: 58%;
+        padding-left: 15%;
+        margin-left: 0;
+    }
+
+    .last-right-expand > footer > label:nth-of-type(3), .last-right-expand > header > label:nth-of-type(3),
+    .last-right-expand > footer > label:nth-of-type(2), .last-right-expand > header > label:nth-of-type(2) {
+        width:20%;
+    }
+
+    .last-right-expand header > .big-add {
+        padding-left:15%;
+    }
+
+    .last-right-expand header > .big-add span {
+        left:7.5%;
+    }
+
+    .last-right-expand [class*="Members"] header > .big-add span {
+        left:1.5%;
+    }
+
+    .last-right-expand [class*="-row"] > [class*="expand"] {
+        height:auto;
+        overflow:auto;
+    }
+
+}

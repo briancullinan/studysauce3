@@ -1,0 +1,358 @@
+
+[id^="register"] .results-invite-1,
+[id^="account"] .results-invite-1 {
+    display:none;
+}
+
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label {
+    margin-left:0;
+    padding-left:0;
+    margin-bottom:5px;
+    display:block;
+}
+
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.highlighted-link {
+    margin-bottom:0;
+}
+
+[id^="register"] .pane-content
+{
+    text-align: center;
+}
+
+[id^="register"] h2 {
+    text-align: center;
+}
+
+[id^="register"] .results [class*="-row"] > .idSingleCoupon:nth-child(1) {
+    width:auto;
+    padding:0;
+    margin:0;
+    display:block;
+}
+
+#login .pane-content
+{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#login label span {
+    margin-left: -100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.signup-or {
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+.signup-or span {
+    background: url("../images/noise_darkgray.png") repeat scroll 0 0 #111111;
+    border-radius: 4px 4px 4px 4px;
+    color: #CCCCCC;
+    font-style: italic;
+    padding: 3px 20px;
+    position: relative;
+    text-transform: uppercase;
+    top: 12px;
+}
+
+a[href="#sign-in-with-email"]
+{
+    display:block;
+    margin:10px auto;
+}
+
+#login .social-login
+{
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 100px 140px 0 2px;
+    vertical-align: middle;
+    text-align: center;
+    width:40%;
+}
+
+#login .social-login a
+{
+    display:block;
+    margin-left:auto;
+    margin-bottom:10px;
+    width: 180px;
+}
+
+#login .social-login a:last-of-type
+{
+    margin-bottom: 0;
+}
+
+#login .signup-or
+{
+    display:inline-block;
+    width: 200px;
+    margin: 0 -102px 20px -102px;
+    vertical-align: middle;
+    padding-top:100px;
+}
+
+[id^="register"] form
+{
+    max-width: 600px;
+    margin:0 auto;
+    padding-top: 100px;
+}
+
+#login form
+{
+    margin:0 -2px;
+    padding: 100px 2px 0 140px;
+    display:inline-block;
+    width:50%;
+    vertical-align: middle;
+}
+
+[id^="account"] .results .ss_user-row:hover:not(.selected):not(.edit) {
+    background: transparent;
+    border-color: transparent;
+}
+
+[id^="account"] .results .ss_user-row ~ .new-password,
+[id^="account"] .results .ss_user-row ~ .confirm-password,
+[id^="account"] .results .ss_user-row ~ .pass,
+[id^="account"] .results .ss_user-row.edit ~ .highlighted-link .edit-icons,
+[id^="account"] .results .ss_user-row.edit-pass ~ .highlighted-link .edit-icons,
+[id^="account"] [value="#save-account"]
+{
+    display: none;
+}
+
+[id^="account"] .results .ss_user-row.edit-pass ~ .highlighted-link [value="#save-account"],
+[id^="account"] .results .ss_user-row.edit-pass ~ .highlighted-link [href="#cancel-edit"],
+[id^="account"] .results .ss_user-row.edit ~ .highlighted-link [value="#save-account"],
+[id^="account"] .results .ss_user-row.edit ~ .highlighted-link [href="#cancel-edit"] {
+    display:inline;
+    visibility: visible;
+    opacity: 1;
+}
+
+[id^="account"] .results .ss_user-row.edit-pass ~ .new-password,
+[id^="account"] .results .ss_user-row.edit-pass ~ .confirm-password,
+[id^="account"] .results .ss_user-row.edit-pass ~ .pass,
+[id^="account"] .results .ss_user-row.edit ~ .pass,
+[id^="account"] .results .ss_user-row > * {
+    display:block;
+    width:auto;
+}
+
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.parent span,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.year span,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label._code span,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.childLast span,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.childFirst span,
+#account .social-login span,
+#account .type span,
+#account .pass span,
+#account .new-password span,
+#account .confirm-password span,
+#account .email span,
+#account .first span,
+#account .last span
+{
+    width:100%;
+    display:inline-block;
+    margin-right:-50%;
+    padding-right:50%;
+    font-weight: bold;
+}
+
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.parent select,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.year select,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label._code select,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.childLast input,
+.tiles.summary [class*="-row"].invite-row > [class^="id"] label.childFirst input,
+#account .social-login input,
+#account .pass input,
+#account .new-password input,
+#account .confirm-password input,
+#account .email input,
+#account .first input,
+#account .last input
+{
+    width:50%;
+    display:inline-block;
+    margin:0 0 0 -5px;
+}
+
+
+.tiles.summary [class*="-row"].invite-row > [class^="id"] .input.select:before {
+    left:50%;
+}
+
+[id^="register"] .first,
+[id^="register"] .childFirst,
+[id^="register"] .last,
+[id^="register"] .childLast
+{
+    margin: 0 -2px;
+    padding-right: 3px;
+    width: 50%;
+    max-width: 300px;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+[id^="register"] .last
+{
+    padding-right:0;
+    padding-left:2px;
+}
+
+[id^="register"] .hasChild {
+    float:left;
+}
+
+[id^="register"] .email,
+[id^="register"] .pass,
+[id^="register"] .highlighted-link:last-child,
+[id^="register"] [class*="-row"] > * .parent,
+[id^="register"] [class*="-row"] > * .year,
+[id^="register"] [class*="-row"] > * ._code,
+#login .email,
+#login .password,
+#login  .highlighted-link:last-child
+{
+    width: auto;
+    max-width: 600px;
+    display:block;
+    margin: 0 auto 5px;
+}
+
+[id^="register"] [class*="-row"] > * .parent span,
+[id^="register"] [class*="-row"] > * .year span,
+[id^="register"] [class*="-row"] > * ._code span
+{
+    display:none;
+}
+
+#account .edit-icons
+{
+    text-align: left;
+}
+
+#account a[href*="/reset"],
+#account a[href="#edit-password"],
+#account a[href="#edit-account"],
+#account a[href="#cancel-confirm"]
+{
+    display:inline-block;
+    margin-right:40px;
+    text-align: center;
+}
+
+[id^="register"] .form-actions a[href*="/logout"],
+#login .form-actions a[href*="/logout"] {
+    max-width: 280px;
+    float:left;
+    text-align: center;
+}
+
+#login .form-actions a[href*="/reset"] {
+    position:absolute;
+    left:10px;
+    bottom:10px;
+}
+
+#reset.reset-sent form,
+#reset .reset-sent-message
+{
+    display:none;
+}
+
+#reset.reset-sent .reset-sent-message
+{
+    display:block;
+}
+
+@media all and (max-width: 1000px)
+{
+
+    #login .social-login a
+    {
+        margin-right:auto;
+    }
+
+    #login form,
+    #login .signup-or,
+    #login .social-login {
+        display: block;
+        width: auto;
+        padding: 40px 0 0;
+        margin:0;
+    }
+
+}
+
+@media all and (max-width: 700px)
+{
+
+    #account a[href*="/premium"]
+    {
+        display:block;
+        margin: 10px auto;
+        max-width: 130px;
+    }
+
+    [id^="register"] form
+    {
+        padding-top: 40px;
+    }
+
+    [id^="register"] .first, [id^="register"] .last
+    {
+        margin:0;
+        width:100%;
+        padding:0;
+        max-width: none;
+    }
+
+    #account .social-login span,
+    #account .pass span,
+    #account .new-password span,
+    #account .confirm-password span,
+    #account .email span,
+    #account .first span,
+    #account .last span
+    {
+        display:block;
+        width:auto;
+        padding:0;
+        margin: 0;
+    }
+
+    #account .pass input,
+    #account .new-password input,
+    #account .confirm-password input,
+    #account .email input,
+    #account .first input,
+    #account .last input
+    {
+        width:100%;
+        margin: 0;
+    }
+
+    .tiles.summary [class*="-row"].invite-row > [class^="id"] label.parent,
+    .tiles.summary [class*="-row"].invite-row > [class^="id"] label.year,
+    .tiles.summary [class*="-row"].invite-row > [class^="id"] label._code
+    {
+        width:auto;
+        display:block;
+        margin:0 0 5px;
+        padding:0;
+    }
+}
+
+

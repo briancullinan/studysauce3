@@ -1,0 +1,443 @@
+
+[id^="store"] .ss_user-row {
+    display:none;
+}
+
+[id^="thanks"] .tiles.summary .pack-row [class^="id"] .highlighted-link,
+[id^="store"] .tiles.summary .coupon-row [class^="id"] .highlighted-link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: auto;
+    margin-left: 0;
+    left: auto;
+    margin-top:-25px;
+    padding:0;
+    z-index: 10;
+}
+
+[id^="store_cart"] .tiles.summary .coupon-row [class^="id"] .highlighted-link {
+    margin-top:-15px;
+}
+
+[id^="store"] [href="#edit-coupon"] {
+    display:none;
+}
+
+[id^="store"] header h3:not(.big-add) {
+    color: #44AA44;
+    width:100%;
+    position:relative;
+}
+
+[id^="store"] header h3:not(.big-add):before {
+    content: " ";
+    display: block;
+    width: 10%;
+    background: url(../images/green_check.png) no-repeat center center transparent;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+[id^="store"] header label span {
+    font-weight: normal;
+}
+
+[id^="store"] header label {
+    float: left;
+    padding: 15px;
+    margin-left: 10%;
+}
+
+[id^="store"] .coupon-row h3 {
+    display:inline-block;
+    margin:0;
+}
+
+[id^="checkout"] .highlighted-link td,
+[id^="store"] .highlighted-link td {
+    padding:10px;
+}
+
+[id^="checkout"] .highlighted-link td:first-child,
+[id^="store"] .highlighted-link td:first-child {
+    text-align: left;
+    padding-left:0;
+    white-space: nowrap;
+}
+
+[id^="checkout"] .highlighted-link td:last-child,
+[id^="store"] .highlighted-link td:last-child {
+    padding-right:0;
+}
+
+[id^="checkout"] .highlighted-link table,
+[id^="store"] .highlighted-link table {
+    margin-left: auto;
+    margin-right: 0;
+    width: 250px;
+}
+
+[id^="checkout"] .highlighted-link tfoot,
+[id^="store"] .highlighted-link tfoot {
+    font-weight:bold;
+    border-top: 2px solid #555;
+}
+
+[id^="store"] .tiles.summary .highlighted-link a.more,
+[id^="thanks"] .tiles.summary .pack-row [class^="id"] .highlighted-link button,
+[id^="store"] .tiles.summary .coupon-row [class^="id"] .highlighted-link button {
+    width:160px;
+}
+
+[id^="checkout"] .results {
+    display:inline-block;
+}
+
+[id^="checkout"] .results button, [id^="checkout"] .coupon-row, [id^="checkout"] .ss_user-row {
+    display:none;
+}
+
+[id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label {
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    margin: 0 -2px;
+    top:0;
+    left:0;
+    bottom:auto;
+    right:auto;
+    padding: 0 15% 0 2px;
+}
+
+[id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label.child
+{
+    width:20%;
+    margin-right:10%;
+    padding-right:20px;
+}
+
+[id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label.child:before {
+    right: 20px;
+}
+
+[id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label:last-of-type {
+    padding-right:15%;
+    margin-left: 30%;
+    width:70%;
+}
+
+[id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] i {
+    left:20%;
+}
+
+#checkout #payment-pane,
+#checkout #billing-pane,
+#checkout #coupon-pane,
+#checkout #gift-pane
+{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 0px;
+    margin-right: 1%;
+    margin-bottom: 10px;
+}
+
+#checkout #gift-pane,
+#checkout #coupon-pane,
+#checkout #billing-pane
+{
+    float:left;
+    clear:left;
+}
+
+#checkout.invalid label.input.number.invalid:after,
+#checkout.invalid label.input.year.invalid:after,
+#checkout.invalid label.input.month.invalid:after,
+
+#checkout.invalid label.input.first.invalid:after,
+#checkout.invalid label.input.last.invalid:after,
+#checkout.invalid label.input.email.invalid:after,
+#checkout.invalid label.input.street1.invalid:after,
+#checkout.invalid label.input.country.invalid:after,
+#checkout.invalid label.input.state.invalid:after,
+#checkout.invalid label.input.city.invalid:after,
+#checkout.invalid label.input.zip.invalid:after
+{
+    top:75%;
+}
+
+#checkout #payment-pane
+{
+    margin-left: 0px;
+    margin-right: 0;
+    width: 50%;
+}
+
+#checkout #gift-pane,
+#checkout #coupon-pane {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    display:none;
+}
+
+#checkout #gift-pane.shown-by-default
+{
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    display: inline-block;
+}
+
+#payment-pane .product-option
+{
+    margin-right: -110px;
+    padding-right: 100px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#payment-pane .product-option .radio
+{
+    display:block;
+}
+
+#payment-pane img
+{
+    vertical-align: middle;
+    float:right;
+}
+
+#coupon-pane .coupon-code
+{
+    display:inline-block;
+    width:100%;
+    padding-right:235px;
+    margin-right: -225px;
+    vertical-align: middle;
+}
+
+#billing-pane a[href="#show-coupon"],
+#billing-pane a[href="#show-gift"]
+{
+    display: block;
+    margin-right: auto;
+    max-width: 350px;
+}
+
+#coupon-pane a[href="#coupon-apply"]
+{
+    margin-left:auto;
+    margin-right:0;
+    vertical-align: middle;
+}
+
+#payment-pane .year,
+#payment-pane .month,
+#gift-pane .first,
+#gift-pane .last,
+#billing-pane .first,
+#billing-pane .last,
+#billing-pane .city,
+#billing-pane .zip
+{
+    width: 50%;
+    margin: 0 -2px;
+    padding: 0 2px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+#payment-pane .number
+{
+    position: relative;
+    display:block;
+}
+
+#payment-pane .number .cards
+{
+    display: inline-block;
+    vertical-align: bottom;
+    height: 28px;
+    padding: 3px 5px;
+    border-radius: 2px;
+    width: 160px;
+    opacity: .5;
+    position:absolute;
+    right:0;
+    bottom:0;
+    pointer-events:none;
+}
+
+#payment-pane .number input:focus ~ .cards {
+    opacity: .9;
+}
+
+#payment-pane .number img
+{
+    float:right;
+    border-radius: 1px;
+}
+
+#payment-pane .number input
+{
+    padding-right: 160px;
+}
+
+#thanks .pane-content
+{
+    padding-bottom:40px;
+    padding-left: 300px;
+}
+
+#thanks .payment-row {
+    display:none;
+}
+
+#thanks h1:before
+{
+    content: " ";
+    display:block;
+    position:absolute;
+    top:50%;
+    height: 282px;
+    width: 269px;
+    left: 0;
+    margin:-140px 25px 0 25px;
+    background: url(../images/Study_Sauce_Logo_Sketch.png) no-repeat 0 0 transparent;
+}
+
+#thanks h1
+{
+    margin-top:40px;
+    font-size: 50px;
+    color: #FF9900;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+#thanks h2
+{
+    text-align: center;
+    color: #555;
+    padding: 0 20px;
+}
+
+#thanks .highlighted-link {
+    text-align: center;
+}
+
+@media all and (max-width:700px)
+{
+
+    #thanks h1:before
+    {
+        display:none;
+    }
+
+    #thanks .pane-content
+    {
+        padding-left:15px;
+    }
+
+    #checkout .form-actions
+    {
+        width:auto;
+        margin:0;
+        padding:0;
+        display:block;
+    }
+
+    #payment-pane .number .cards,
+    #payment-pane .number input:focus ~ .cards
+    {
+        display:none;
+    }
+
+    #payment-pane .number input
+    {
+        padding-right:5px;
+    }
+
+    #coupon-pane .coupon-code
+    {
+        margin-right: 0;
+        padding-right: 0;
+        display: block;
+    }
+
+    .page-cart-checkout #payment-pane
+    {
+        margin-left:-10px;
+        margin-right:-1px;
+    }
+
+    #checkout #payment-pane,
+    #checkout #billing-pane,
+    #checkout #coupon-pane,
+    #checkout #gift-pane
+    {
+        width: auto;
+        display:block !important;
+        float:none;
+        clear:both;
+        height:auto !important;
+    }
+
+    [id^="thanks"] .tiles.summary .pack-row [class^="id"] .highlighted-link,
+    [id^="store"] .tiles.summary .coupon-row [class^="id"] .highlighted-link
+    {
+        position:static;
+        margin-top:10px;
+        display:block;
+        text-align: right;
+    }
+
+    .tiles.summary [class*="-row"] > [class^="id"] label {
+        white-space: normal;
+    }
+
+    [id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label.child
+    {
+        display:block;
+        width:auto;
+        margin:0;
+        padding:0;
+    }
+
+    [id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label {
+        margin-top:10px;
+    }
+
+    [id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] i {
+        height:auto;
+        left:0;
+        top:25px;
+    }
+
+    [id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label.child:before {
+        right:0;
+    }
+
+    [id^="store_cart"] .tiles.summary [class*="-row"] > [class^="id"] label:last-of-type
+    {
+        padding:0;
+        margin:0;
+    }
+
+    .tiles.summary [class*="-row"] > [class^="id"]:before {
+        display:none;
+    }
+}
+
+
+
+
